@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZaykaHub - Restaurant Menu</title>
+    <link rel="stylesheet" href="css/menu.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <div class="logo">
+        <a href="index.html"><h1>ZaykaHub</h1></a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="index.html#home">Home</a></li>
+          <li><a href="index.html#menu">Featured Dishes</a></li>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          <li><a href="cart.html">Cart</a></li>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="register.html">Register</a></li>
+          <li><a href="profile.html">Profile</a></li>
+        </ul>
+      </nav>
+      <div class="menu-toggle">
+        <i class="fas fa-bars"></i>
+      </div>
+    </header>
+    <div class="menu-page">
+        <div class="menu-header">
+          <h1>Our Delicious Menu</h1>
+          <p>Enjoy our selection of fine dishes</p>
+        </div>
+      
+        <div class="menu-tabs">
+          <button class="menu-tab-btn active" onclick="openMenuTab('starters')">
+            Starters
+          </button>
+          <button class="menu-tab-btn" onclick="openMenuTab('mains')">
+            Main Dishes
+          </button>
+          <button class="menu-tab-btn" onclick="openMenuTab('desserts')">
+            Desserts
+          </button>
+          <button class="menu-tab-btn" onclick="openMenuTab('drinks')">
+            Drinks
+          </button>
+        </div>
+      
+        <div id="starters" class="menu-content active">
+          <h2>Starters & Appetizers</h2>
+      
+         
+      
+         
+        </div>
+      
+        <div id="mains" class="menu-content">
+          <h2>Main Dishes</h2>
+      
+          
+        </div>
+      
+        <div id="desserts" class="menu-content">
+          <h2>Desserts</h2>
+      
+        </div>
+      
+        <div id="drinks" class="menu-content">
+          <h2>Drinks</h2>
+      
+        </div>
+      </div>
+      
+    <!-- Footer Section -->
+    <footer>
+      <div class="footer-content" id="contact-info">
+        <div class="footer-section">
+          <h3>ZaykaHub</h3>
+          <p>123 Gourmet Street<br />Foodville, FD 12345</p>
+        </div>
+        <div class="footer-section">
+          <h3>Hours</h3>
+          <p>
+            Monday - Friday: 11am - 10pm<br />
+            Saturday - Sunday: 10am - 11pm
+          </p>
+        </div>
+        <div class="footer-section">
+          <h3>Contact</h3>
+          <p>
+            Phone: (123) 456-7890<br />
+            Email: info@zaykahub.com
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2025 ZaykaHub. All rights reserved.</p>
+      </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/menu.js"></script>
+  </body>
+</html>

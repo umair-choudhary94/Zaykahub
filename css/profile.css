@@ -1,0 +1,228 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.5;
+}
+
+/* Profile container */
+.profile-container {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+/* Profile header */
+.profile-header {
+    display: flex;
+    padding: 20px;
+    background-color: #f5f0e9;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-avatar {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+.profile-avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #5c3d2e;
+}
+
+.profile-info h1 {
+    color: #5c3d2e;
+    margin-bottom: 10px;
+}
+
+.profile-info p {
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Profile navigation */
+.profile-nav {
+    display: flex;
+    background-color: #f5f0e9;
+    border-bottom: 1px solid #ddd;
+}
+
+.profile-tab {
+    flex: 1;
+    padding: 15px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    color: #5c3d2e;
+    border-bottom: 3px solid transparent;
+}
+
+.profile-tab:hover {
+    background-color: #e6dfd5;
+}
+
+.profile-tab.active {
+    border-bottom: 3px solid #5c3d2e;
+    font-weight: bold;
+}
+
+/* Tab content */
+.profile-content {
+    padding: 20px;
+}
+
+.tab-content {
+    display: none;
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.tab-content h2 {
+    color: #5c3d2e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Order items */
+.order-item, .reservation-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.order-header, .reservation-header {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f5f0e9;
+    font-weight: bold;
+}
+
+.order-details, .reservation-details {
+    padding: 15px;
+    background-color: white;
+}
+
+.order-details p, .reservation-details p {
+    margin-bottom: 5px;
+}
+
+/* Reservation status */
+.reservation-status {
+    padding: 3px 8px;
+    border-radius: 3px;
+    font-size: 14px;
+}
+
+.completed {
+    background-color: #e6f7e6;
+    color: #2e8b57;
+}
+
+.upcoming {
+    background-color: #e6f0f7;
+    color: #4682b4;
+}
+
+.cancel-btn {
+    background-color: #f7e6e6;
+    color: #b44646;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Form styling */
+.form-row {
+    margin-bottom: 15px;
+}
+
+.form-row label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #5c3d2e;
+}
+
+.form-row input, .form-row textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-family: inherit;
+    font-size: 14px;
+}
+
+.form-row textarea {
+    height: 80px;
+    resize: vertical;
+}
+
+.save-btn {
+    background-color: #5c3d2e;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.save-btn:hover {
+    background-color: #4a3124;
+}
+
+/* Mobile responsive */
+@media (max-width: 600px) {
+    .profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    .profile-avatar {
+        margin: 0 auto 15px;
+    }
+    
+    .profile-nav {
+        flex-direction: column;
+    }
+    
+    .profile-tab {
+        border-bottom: 1px solid #ddd;
+    }
+    
+    .profile-tab.active {
+        border-bottom: 1px solid #ddd;
+        border-left: 3px solid #5c3d2e;
+    }
+    
+    .order-header, .reservation-header {
+        flex-direction: column;
+    }
+    
+    .order-header span, .reservation-header span {
+        margin-bottom: 5px;
+    }
+}
