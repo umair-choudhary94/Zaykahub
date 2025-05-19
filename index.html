@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ZaykaHub - Fine Restaurant</title>
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/chatbot.css">
     <!-- Font Awesome for icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 </head>
@@ -52,13 +54,10 @@
            
         </div>
         
-        <div class="dishes-container">
-            <div class="dish-controls">
-                <button id="prev-dish">Prev </button>
-                <button id="next-dish">Next</button>
-            </div>
+        <div >
             
-            <div class="dishes-slider">
+            
+            <div class="dishes">
                 <div class="dish">
                     <img src="https://images.immediate.co.uk/production/volatile/sites/30/2020/08/grilled-miso-salmon-with-rice-noodles-58a2bbb.jpg?quality=90&resize=500,454" alt="Grilled Salmon">
                     <h3>Grilled Salmon</h3>
@@ -151,6 +150,78 @@
         </div>
     </section>
 
+    <section class="faq-section" id="faq">
+        <div class="faq-container">
+          <h2>Frequently Asked Questions</h2>
+      
+          <div class="faq-item">
+            <button class="faq-question">Do you offer vegetarian or vegan options?</button>
+            <div class="faq-answer">
+              <p>Yes, we have a variety of vegetarian and vegan dishes crafted with fresh, plant-based ingredients.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">Do you deliver food?</button>
+            <div class="faq-answer">
+              <p>Yes, we offer home delivery through ZaykaHub Delivery and food delivery apps like Zomato and Swiggy.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">Can I make a reservation online?</button>
+            <div class="faq-answer">
+              <p>Absolutely! You can book your table through our website’s reservation page or call us directly.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">Do you host private events or catering?</button>
+            <div class="faq-answer">
+              <p>Yes, we cater for private events, parties, and corporate functions. Please contact us for custom packages.</p>
+            </div>
+          </div>
+      
+          <div class="faq-item">
+            <button class="faq-question">What are your opening hours?</button>
+            <div class="faq-answer">
+              <p>We’re open daily from 11:00 AM to 11:00 PM, including weekends and holidays.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      
+
+      <!-- Chat Bot Container -->
+    <div class="chat-container">
+        <!-- Chat Button -->
+        <button class="chat-button" id="chatButton">
+            <i class="fas fa-comment"></i>
+        </button>
+
+        <!-- Chat Box -->
+        <div class="chat-box" id="chatBox">
+            <div class="chat-header">
+                <h3>ZaykaHub Assistant</h3>
+                <button class="close-button" id="closeChat">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+                <div class="message bot">
+                    Hello! I'm your ZaykaHub assistant. Ask me about our menu items and prices!
+                </div>
+            </div>
+            <div class="chat-input">
+                <input type="text" id="userInput" placeholder="Ask about our menu...">
+                <button id="sendButton">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
     <!-- Footer Section -->
     <footer>
         <div class="footer-content" id="contact-info">
@@ -174,6 +245,8 @@
         </div>
     </footer>
 
-    <script src="js/script.js"></script>
+    <script src="js/responsive.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/chatbot.js"></script>
 </body>
 </html>

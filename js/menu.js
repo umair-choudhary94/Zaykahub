@@ -22,7 +22,7 @@ function openMenuTab(tabName) {
 function createMenuItemHTML(item) {
     return `
       <div class="menu-item" data-id="${item.id || ''}">
-        <img src="${item.img}" alt="${item.name}" class="menu-item-img" />
+        <img src="${item.image}" alt="${item.name}" class="menu-item-img" />
         <div>
           <div class="menu-item-name">${item.name}</div>
           <div class="menu-item-price">${item.price}</div>

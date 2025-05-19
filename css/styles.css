@@ -155,46 +155,20 @@ nav ul li a:hover {
     background-color: white;
 }
 
-.dishes-container {
-    position: relative;
-    max-width: 1200px;
-    margin: 0 auto;
-    overflow: hidden;
-}
 
-.dish-controls {
+
+.dishes {
     display: flex;
-    justify-content: space-between;
-    position: absolute;
-    width: 100%;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 10;
-}
-
-.dish-controls button {
-    background-color: rgba(92, 61, 46, 0.8);
-    color: white;
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: background-color 0.3s;
-}
-
-.dish-controls button:hover {
-    background-color: rgba(92, 61, 46, 1);
-}
-
-.dishes-slider {
-    display: flex;
-    transition: transform 0.5s ease;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  
+    
 }
 
 .dish {
     min-width: 300px;
-    margin: 0 15px;
+    margin: 15px 15px;
     padding: 20px;
     background-color: #f9f9f9;
     border-radius: 8px;
@@ -393,7 +367,9 @@ footer {
     }
     
     
-    
+    .dishes{
+        flex-direction: column;
+    }
     .footer-content {
         flex-direction: column;
     }

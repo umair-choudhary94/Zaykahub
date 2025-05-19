@@ -51,50 +51,54 @@ document.addEventListener('DOMContentLoaded', function () {
 
 
     const reservations = JSON.parse(localStorage.getItem('reservations')) || [];
+    const reservationHistoryContainer = document.getElementById('reservation-history');
     if (reservations.length > 0) {
         console.log(reservations);
-    const reservationHistoryContainer = document.getElementById('reservation-history');
-    reservations.forEach(reservation => {
-        const reservationItem = document.createElement('div');
-        reservationItem.classList.add('reservation-item');
+        reservations.forEach(reservation => {
+            const reservationItem = document.createElement('div');
+            reservationItem.classList.add('reservation-item');
 
-        const reservationHeader = document.createElement('div');
-        reservationHeader.classList.add('reservation-header');
+            const reservationHeader = document.createElement('div');
+            reservationHeader.classList.add('reservation-header');
 
-        const reservationDate = document.createElement('span');
-        reservationDate.classList.add('reservation-date');
-        reservationDate.textContent = reservation.date;
+            const reservationDate = document.createElement('span');
+            reservationDate.classList.add('reservation-date');
+            reservationDate.textContent = reservation.date;
 
-        const reservationTime = document.createElement('span');
-        reservationTime.classList.add('reservation-time');
-        reservationTime.textContent = reservation.time;
+            const reservationTime = document.createElement('span');
+            reservationTime.classList.add('reservation-time');
+            reservationTime.textContent = reservation.time;
 
-        const reservationStatus = document.createElement('span');
-        reservationStatus.classList.add('reservation-status');
-        reservationStatus.textContent = 'Completed';
-        reservationStatus.style.color = 'green';
+            const reservationStatus = document.createElement('span');
+            reservationStatus.classList.add('reservation-status');
+            reservationStatus.textContent = 'Completed';
+            reservationStatus.style.color = 'green';
 
-        reservationHeader.appendChild(reservationDate);
-        reservationHeader.appendChild(reservationTime);
-        reservationHeader.appendChild(reservationStatus);
+            reservationHeader.appendChild(reservationDate);
+            reservationHeader.appendChild(reservationTime);
+            reservationHeader.appendChild(reservationStatus);
 
-        const reservationDetails = document.createElement('div');
-        reservationDetails.classList.add('reservation-details');
+            const reservationDetails = document.createElement('div');
+            reservationDetails.classList.add('reservation-details');
 
-        const guestsParagraph = document.createElement('p');
-        guestsParagraph.textContent = `Table for ${reservation.guests} people`;
+            const guestsParagraph = document.createElement('p');
+            guestsParagraph.textContent = `Table for ${reservation.guests} people`;
 
-        const specialRequestParagraph = document.createElement('p');
-        specialRequestParagraph.textContent = `Special request: ${reservation.specialRequest}`;
+            const specialRequestParagraph = document.createElement('p');
+            specialRequestParagraph.textContent = `Special request: ${reservation.specialRequest}`;
 
-        reservationDetails.appendChild(guestsParagraph);
-        reservationDetails.appendChild(specialRequestParagraph);
+            reservationDetails.appendChild(guestsParagraph);
+            reservationDetails.appendChild(specialRequestParagraph);
 
-        reservationItem.appendChild(reservationHeader);
-        reservationItem.appendChild(reservationDetails);
+            reservationItem.appendChild(reservationHeader);
+            reservationItem.appendChild(reservationDetails);
 
-        reservationHistoryContainer.appendChild(reservationItem);
-    });
+            reservationHistoryContainer.appendChild(reservationItem);
+        });
+    } else {
+        const noReservationsMessage = document.createElement('p');
+        noReservationsMessage.textContent = 'No reservations to display.';
+        reservationHistoryContainer.appendChild(noReservationsMessage);
     }
 
 const orders = JSON.parse(localStorage.getItem('orders')) || [];
@@ -133,7 +137,15 @@ if (orders.length > 0) {
 
         orderHistoryContainer.appendChild(orderItem);
     });
+} else {
+    const orderHistoryContainer = document.getElementById('past-orders');
+    const noOrdersMessage = document.createElement('p');
+    noOrdersMessage.textContent = 'No orders to display.';
+    orderHistoryContainer.appendChild(noOrdersMessage);
 }
+
+
+
 });
 
 

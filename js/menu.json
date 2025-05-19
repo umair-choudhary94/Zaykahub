@@ -13,21 +13,21 @@
           "name": "Bruschetta",
           "price": 7.99,
           "description": "Toasted bread topped with tomatoes, basil, and olive oil",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQZlEQcuxdS9Cp5MVsuxtYigZMnxMPn656ZQ&s"
         },
         {
           "id": 3,
           "name": "Mozzarella Sticks",
           "price": 8.99,
           "description": "Breaded mozzarella with marinara sauce",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSOjgfug_0gfKQWsaZFlQqQghr_38d3kgtDOA&s"
         },
         {
           "id": 4,
           "name": "Soup of the Day",
           "price": 6.99,
           "description": "Ask your server for today's special soup",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR7LdS3TScxSkir-zlJDqWIMIs76pviwU0Vkw&s"
         }
       ],
       "mains": [
@@ -36,28 +36,28 @@
           "name": "Grilled Salmon",
           "price": 24.99,
           "description": "Fresh Atlantic salmon with lemon butter sauce and vegetables",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHeUIB4icnTJRdDgFPSc5ZmZ4gmTsX9Xi-HQ&s"
         },
         {
           "id": 6,
           "name": "Chicken Alfredo",
           "price": 18.99,
           "description": "Fettuccine pasta with creamy alfredo sauce and grilled chicken",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS5EuVYEm22v_-iy2vFQ-4niAT7Dk4uzs_CYA&s"
         },
         {
           "id": 7,
           "name": "Beef Steak",
           "price": 29.99,
           "description": "10oz ribeye steak with mashed potatoes and seasonal vegetables",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSQPSb8fOOlDho51dz7kuHxfcexoOBFUKYQQ&s"
         },
         {
           "id": 8,
           "name": "Vegetable Stir Fry",
           "price": 16.99,
           "description": "Mixed vegetables stir-fried with tofu in a savory sauce",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://www.mccormick.com/-/media/project/oneweb/mccormick-us/mccormick/recipe-images/stir-fry-vegetables-recipe-800x800.jpg?rev=56e6eec8c7b14887a5c238eb35a20da9&vd=20240606T181334Z&extension=webp&hash=FF02DA13F3817A968D847A8A85B1E48D"
         }
       ],
       "desserts": [
@@ -66,28 +66,28 @@
           "name": "Chocolate Cake",
           "price": 8.99,
           "description": "Rich chocolate cake with vanilla ice cream",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://www.piesandtacos.com/wp-content/uploads/2024/04/chocolate-birthday-cake-scaled.jpg"
         },
         {
           "id": 10,
           "name": "Cheesecake",
           "price": 7.99,
           "description": "New York style cheesecake with berry compote",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSrf9shsjyXhSLmgo-FKO3ItNWO_De0abxZZg&s"
         },
         {
           "id": 11,
           "name": "Apple Pie",
           "price": 6.99,
           "description": "Homemade apple pie with cinnamon and caramel",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSFc0G4Gizvrm6WeGKADBTx4YLfdJbyDjDjNg&s"
         },
         {
           "id": 12,
           "name": "Ice Cream Sundae",
           "price": 5.99,
           "description": "Three scoops of ice cream with toppings",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyDUsComxmjN27YmFhF0dOSTZP_K2LlhbE6Q&s"
         }
       ],
       "drinks": [
@@ -96,28 +96,28 @@
           "name": "Soft Drinks",
           "price": 2.99,
           "description": "Coke, Sprite, Fanta, Dr. Pepper",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://m.media-amazon.com/images/I/71e4C1N4eYL._AC_SL1272_.jpg"
         },
         {
           "id": 14,
           "name": "Iced Tea",
           "price": 3.50,
           "description": "Sweet or unsweet with lemon",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://images.themodernproper.com/production/posts/IcedTea_8.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1716306653&s=e7e37b87126eaafc95ddb53435ba341e"
         },
         {
           "id": 15,
           "name": "Coffee",
           "price": 3.99,
           "description": "Regular or decaf with cream and sugar",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSGtlDheJZ5eLJMAzbiblEQWf7FrOIllGV4MA&s"
         },
         {
           "id": 16,
           "name": "House Wine",
           "price": 7.99,
           "description": "Red or white wine by the glass",
-          "image": "https://via.placeholder.com/150"
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQHoTFpc3a5_XanoAss0dEHinV8Ko4NErPbqQ&s"
         }
       ]
     }

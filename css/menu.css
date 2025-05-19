@@ -153,7 +153,15 @@ body {
     margin: 0 5px;
     border: 1px solid #ccc;
   }
-  
+  .add-to-cart-btn{
+    background-color: #5c3d2e;
+    color: white;
+    border: none;
+    padding: 7px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
 /* Mobile responsive */
 @media (max-width: 600px) {
     .menu-tab-btn {
